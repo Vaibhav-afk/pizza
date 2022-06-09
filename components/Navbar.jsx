@@ -1,5 +1,6 @@
 import styles from "../styles/Navbar.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -18,16 +19,26 @@ export default function Navbar() {
           <li className={styles.listItem}>Homepage</li>
           <li className={styles.listItem}>Products</li>
           <li className={styles.listItem}>Menu</li>
-          <Image src="/img/logo.png" alt="" width="110px" height="88px" />
+          <Link href="/">
+            <Image
+              style={{ cursor: "pointer" }}
+              src="/img/logo.png"
+              alt=""
+              width="110px"
+              height="88px"
+            />
+          </Link>
           <li className={styles.listItem}>Events</li>
           <li className={styles.listItem}>Blog</li>
           <li className={styles.listItem}>Contact</li>
         </ul>
       </div>
       <div className={styles.item}>
-        <div className={styles.cart}>
-          <Image src="/img/cart.png" alt="" width="30px" height="30px" />
-        </div>
+        <Link href="/cart">
+          <div className={styles.cart}>
+            <Image src="/img/cart.png" alt="" width="30px" height="30px" />
+          </div>
+        </Link>
         <div className={styles.counter}>1</div>
       </div>
     </div>

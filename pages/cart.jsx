@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/Cart.module.css";
+import Link from "next/link";
 
 export default function Cart() {
   return (
@@ -99,7 +100,9 @@ export default function Cart() {
           <div className={styles.totalText}>
             <b className={styles.totalTextTitle}>Total:</b>₹1158.00
           </div>
-          <button className={styles.button}>CHECKOUT NOW!</button>
+          <Link href="/orders/123">
+            <button className={styles.button}>CHECKOUT NOW!</button>
+          </Link>
         </div>
       </div>
     </div>
