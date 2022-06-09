@@ -18,8 +18,9 @@
 
 .imgContainer {
     width: 80%;
-    height: 80%;
-    position: relative;
+    height: 40%;
+    top:200px;
+    position:absolute;
 }
 
 .price {

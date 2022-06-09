@@ -34,6 +34,7 @@
 
 .cart {
     position: relative;
+    cursor: pointer;
 }
 
 .counter {
@@ -45,7 +46,7 @@
     border-radius: 50%;
     background-color: #fff;
     padding: 3px;
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
@@ -78,4 +79,5 @@
 .listItem {
     margin: 20px;
     font-weight: 500;
+    cursor: pointer;
 }
